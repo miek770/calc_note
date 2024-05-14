@@ -2,6 +2,9 @@ import pandas as pd
 from IPython.display import display
 from IPython.display import Markdown as md
 
+import warnings
+warnings.filterwarnings('ignore')
+warnings.simplefilter('ignore')
 
 # Pretty DataFrame output in Markdown (makes it possible for LaTeX to convert it to a
 # pretty table afterwards)

@@ -17,8 +17,8 @@ DESCRIPTION = 'Collection of utilities to ease the production of professional ca
 URL = 'https://github.com/miek770/calc_note'
 EMAIL = 'lavoie.michel@gmail.com'
 AUTHOR = 'Michel Lavoie'
-REQUIRES_PYTHON = '>=3.6.5'
-VERSION = '0.1.1'
+REQUIRES_PYTHON = '>=3.8.0'
+VERSION = '0.2.0'
 
 # What packages are required for this module to be executed?
 REQUIRED = [
@@ -119,10 +119,10 @@ setup(
         # Full list: https://pypi.python.org/pypi?%3Aaction=list_classifiers
         'License :: OSI Approved :: MIT License',
         'Programming Language :: Python',
-        'Programming Language :: Python :: 3',
-        'Programming Language :: Python :: 3.6',
-        'Programming Language :: Python :: 3.7',
         'Programming Language :: Python :: 3.8',
+        'Programming Language :: Python :: 3.9',
+        'Programming Language :: Python :: 3.10',
+        'Programming Language :: Python :: 3.11',
         'Programming Language :: Python :: Implementation :: CPython',
         'Programming Language :: Python :: Implementation :: PyPy'
     ],
