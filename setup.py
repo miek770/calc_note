@@ -18,7 +18,7 @@ URL = 'https://github.com/miek770/calc_note'
 EMAIL = 'lavoie.michel@gmail.com'
 AUTHOR = 'Michel Lavoie'
 REQUIRES_PYTHON = '>=3.8.0'
-VERSION = '0.2.0'
+VERSION = '0.2.1'
 
 # What packages are required for this module to be executed?
 REQUIRED = [
