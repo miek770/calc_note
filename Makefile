@@ -6,5 +6,6 @@ sync:
 
 tests:
 	poetry run pytest --nbval-lax
+	poetry run jupyter nbconvert --to pdf tests/test_calc_note.ipynb
 
 .PHONY: lab sync tests
