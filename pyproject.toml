@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "calc-note"
+version = "0.3.0"
+description = "Collection of utilities to ease the production of professional calculation notes using Python and Jupyter."
+authors = ["Michel Lavoie <lavoie.michel@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+homepage = "https://pypi.org/project/calc-note/"
+repository = "https://github.com/miek770/calc_note"
+packages =  [
+	{ include = "calc_note" },
+]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+pandas = "^2.2.3"
+tabulate = "^0.9.0"
+handcalcs = "^1.9.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.3"
+nbval = "^0.11.0"
+jupyterlab = "^4.3.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
