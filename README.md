@@ -4,20 +4,38 @@
 
 ## Installation
 
-### Using [pip](https://pip.pypa.io/en/stable/)
+Using [pip](https://pip.pypa.io/en/stable/):
 
-Simply run:
-
-`pip install -U --user calc_note`
-
-Install any missing requirement using the same method.
+`pip install calc_note`
 
 ## Usage
 
-`from calc_note.display import *`
+Import `calc_note` with:
 
-Afterward, simply call `show()` in your notebook to print [DataFrames](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html) (instead of simply calling the [DataFrame](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html)), and `md("My content...")` to generate [Markdown](https://en.wikipedia.org/wiki/Markdown) content from a [Python](https://www.python.org/) cell. The latter is useful to embed variables in [Markdown](https://en.wikipedia.org/wiki/Markdown) tables, for example.
+```python
+from calc_note.display import *
+```
+
+See [tests/tests_calc_note.ipynb](tests/test_calc_note.ipynb) for usage examples.
+
+### show(pd.DataFrame)
+
+Calling `show()` in a notebook on a [DataFrame](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html) (instead of simply calling the [DataFrame](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html)) prints a table that will remain pretty after the notebook's conversion to PDF.
+
+### md(str)
+
+`calc_notes` imports the following:
+
+```python
+from IPython.display import Markdown as md
+```
+
+The `md(str)` function can thus be used to generate [Markdown](https://en.wikipedia.org/wiki/Markdown) content from a [Python](https://www.python.org/) cell. The latter is useful to embed variables in [Markdown](https://en.wikipedia.org/wiki/Markdown) tables, for example.
+
+### %%render Cell Magic
+
+The `%%render` cell magic from [handcalcs](https://github.com/connorferster/handcalcs) is include to render code blocks as [LaTeX](https://www.latex-project.org/).
 
 ## Contributing
 
-If you wish to contribute, please submit [issues](https://github.com/miek770/calc_note/issues) and [pull requests](https://github.com/miek770/calc_note/pulls) through [this repo](https://gitlab.com/miek770/energy_tools#contributing).
+Contributions are welcome. The package is managed with [poetry](https://python-poetry.org/) starting from v0.3.0. A few useful commands are defined in [Makefile](Makefile).
