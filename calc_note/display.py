@@ -4,7 +4,7 @@ from IPython.display import Markdown as md
 
 # To provide the %%render cell magic
 # See: https://github.com/connorferster/handcalcs
-import handcalcs.render
+import handcalcs.render  # type: ignore
 
 
 def show(df):

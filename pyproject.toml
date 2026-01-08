@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "calc-note"
-version = "0.3.1"
+version = "0.3.2"
 description = "Collection of utilities to ease the production of professional calculation notes using Python and Jupyter."
 authors = ["Michel Lavoie <lavoie.michel@gmail.com>"]
 license = "MIT"
