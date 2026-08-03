@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "calc-note"
-version = "0.3.2"
+version = "0.3.3"
 description = "Collection of utilities to ease the production of professional calculation notes using Python and Jupyter."
 authors = ["Michel Lavoie <lavoie.michel@gmail.com>"]
 license = "MIT"
@@ -12,10 +12,11 @@ packages =  [
 ]
 
 [tool.poetry.dependencies]
-python = "^3.9"
+python = ">=3.12,<4"
 pandas = "^2.2.3"
 tabulate = "^0.9.0"
 handcalcs = "^1.9.0"
+pandas-stubs = "^3.0.5.260730"
 
 [tool.poetry.group.dev.dependencies]
 pytest = "^8.3.3"
