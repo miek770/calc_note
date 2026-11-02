@@ -20,7 +20,7 @@ pandas-stubs = "^3.0.5.260730"
 soupsieve = "2.8.4"
 
 [tool.poetry.group.dev.dependencies]
-pytest = "^8.3.3"
+pytest = ">=8.3.3,<10.0.0"
 nbval = "^0.11.0"
 jupyterlab = "^4.3.0"
 
